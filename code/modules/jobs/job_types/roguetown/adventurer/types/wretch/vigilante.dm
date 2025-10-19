@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/job/roguetown/wretch/vigilante
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_DECEIVING_MEEKNESS, TRAIT_PERFECT_TRACKER)
-	maximum_possible_slots = 1 // There can only be one.
+	maximum_possible_slots = 2
 	extra_context = "This class is best experienced without preparation."
 
 /datum/outfit/job/roguetown/wretch/vigilante/pre_equip(mob/living/carbon/human/H)
@@ -59,7 +59,9 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/jacket
 	H.change_stat(STATKEY_STR, 2)
 	H.change_stat(STATKEY_CON, 3)
-	H.change_stat(STATKEY_WIL, 3)
+	H.change_stat(STATKEY_PER, 1) //keeping an eye out for patrols
+	H.change_stat(STATKEY_WIL, 1)
+	H.change_stat(STATKEY_SPD, 1)
 	ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC) //No crit resist - you can still get folded pretty easily if overwhelmed
 	wretch_select_bounty(H)
 
@@ -81,13 +83,15 @@
 		)
 	H.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE) //Investigations
 	H.adjust_skillrank(/datum/skill/combat/slings, 4, TRUE) // Funny as shit to use.
-	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE) //Last resort CQC. Enough def on a quarterstaff to fight defensively, not enough to be truly offensive.
+	H.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE) //Last resort CQC. Enough def on a quarterstaff to fight defensively. Not for offense, but I gave it a boost because of the lack of armor training.
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE) //The quarterstaff IS pretty bulky, if you want room for more gadgets, you can try unarmed no str, weapons, or civ babarian
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE) //I lurk in the shadows...
 	H.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE) //Crafty
 	H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE) // Escape routes
-	H.adjust_skillrank(/datum/skill/craft/engineering, 3, TRUE) //Make your own tinkering tools and smokebombs
+	H.adjust_skillrank(/datum/skill/craft/engineering, 4, TRUE) //Make your own tinkering tools and smokebombs
 	H.adjust_skillrank(/datum/skill/craft/smelting, 3, TRUE) //Just so your smelted ingots aren't ruined
-	H.change_stat(STATKEY_INT, 3)
+	H.change_stat(STATKEY_CON, 2) //lot of stats, but STR and SPD tend to count for double and you don't get those.
+	H.change_stat(STATKEY_INT, 2) //ooooo you will not run sentinel of wits you will run a virtue that's actually interesting ooOOooo
 	H.change_stat(STATKEY_WIL, 3)
 	H.change_stat(STATKEY_PER, 3)
 	wretch_select_bounty(H)
