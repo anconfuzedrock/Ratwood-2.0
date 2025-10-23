@@ -68,7 +68,6 @@
 	max_integrity = ARMOR_INT_CHEST_PLATE_BLACKSTEEL
 	allowed_race = CLOTHED_RACES_TYPES
 	nodismemsleeves = TRUE
-	do_sound_plate = TRUE
 	blocking_behavior = null
 	smeltresult = /obj/item/ingot/blacksteel
 	equip_delay_self = 4 SECONDS

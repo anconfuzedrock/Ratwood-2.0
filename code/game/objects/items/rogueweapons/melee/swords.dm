@@ -1579,3 +1579,19 @@
 	wbalance = WBALANCE_SWIFT
 	sellprice = 100 // lets not make it too profitable
 	smeltresult = /obj/item/ingot/blacksteel
+
+/obj/item/rogueweapon/sword/blacksteel
+	name = "blacksteel arming sword"
+	desc = "A long blacksteel blade attached to a hilt, separated by a crossguard. The arming sword has been Psydonia's implement of war by excellence for generations, this one is a great deal more expensive then it's steel brother."
+	icon_state = "bs_sword"
+	minstr = 6
+	smeltresult = /obj/item/ingot/blacksteel
+	max_integrity = 200
+	sellprice = 100
+	sheathe_icon = "sword1"
+
+/obj/item/rogueweapon/sword/decorated/blacksteel
+	name = "decorated arming sword"
+	desc = "A valuable ornate arming sword made for the purpose of ceremonial fashion with a fine leather grip, a carefully engraved golden crossguard and a blade entirely of blacksteel."
+	icon_state = "bs_swordregal"
+	sellprice = 200
