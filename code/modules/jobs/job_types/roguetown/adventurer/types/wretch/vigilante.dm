@@ -84,7 +84,6 @@
 	H.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE) //Investigations
 	H.adjust_skillrank(/datum/skill/combat/slings, 4, TRUE) // Funny as shit to use.
 	H.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE) //Last resort CQC. Enough def on a quarterstaff to fight defensively. Not for offense, but I gave it a boost because of the lack of armor training.
-	H.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE) //The quarterstaff IS pretty bulky, if you want room for more gadgets, you can try unarmed no str, weapons, or civ babarian
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE) //I lurk in the shadows...
 	H.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE) //Crafty
 	H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE) // Escape routes
