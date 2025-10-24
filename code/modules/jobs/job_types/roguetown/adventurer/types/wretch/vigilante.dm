@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/job/roguetown/wretch/vigilante
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_DECEIVING_MEEKNESS, TRAIT_PERFECT_TRACKER)
-	maximum_possible_slots = 2
+	maximum_possible_slots = 1
 	extra_context = "This class is best experienced without preparation."
 
 /datum/outfit/job/roguetown/wretch/vigilante/pre_equip(mob/living/carbon/human/H)
