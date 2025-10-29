@@ -89,7 +89,7 @@
 	miracle = FALSE
 	req_items = list(/obj/item/rogueweapon/shovel/)
 
-	var/setup_delay = 20 SECONDS
+	var/setup_delay = 8 SECONDS
 	var/pending = FALSE
 	var/trap_path = /obj/structure/trap/bogtrap/bomb
 
