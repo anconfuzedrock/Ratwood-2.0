@@ -29,7 +29,7 @@
 	name = "suspicious navigator"
 	desc = "Freedom has a price."
 	motto = "NA?!G@#OR - ████ ██████ █████████ - FREEDOM OF TRANSACTION."
-	fixed_tax = 0.7 // 70% taxation and rip off to encourage people to risk it with merchant / others
+	fixed_tax = 0.5 // 50% taxation and rip off to encourage people to risk it with merchant / others
 
 /obj/structure/roguemachine/balloon_pad
 	name = ""
